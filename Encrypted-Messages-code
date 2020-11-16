@@ -1,0 +1,8 @@
+def decipher_message(msg,guide):
+    newstring = ''
+    for char in msg:
+        if char not in guide:
+            newstring += char
+        else:
+            newstring += guide[char]
+    return newstring
